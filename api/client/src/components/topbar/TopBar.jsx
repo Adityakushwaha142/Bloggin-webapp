@@ -5,7 +5,7 @@ import "./topbar.css";
 
 export default function TopBar() {
   const { user, dispatch } = useContext(Context);
-  const PF = "http://localhost:5000/images/"
+  const PF = "https://fashion-blogging-aditya.herokuapp.com/images/"
   const dummy = "https://crowd-literature.eu/wp-content/uploads/2015/01/no-avatar.gif"; 
 
   const handleLogout = () => {

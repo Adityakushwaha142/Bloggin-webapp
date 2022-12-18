@@ -5,6 +5,10 @@ const bcrypt = require("bcrypt");
 
 //UPDATE
 router.put("/:id", async (req, res) => {
+  if(req.body.userId == "" || req.body.username == "" || req.body.email == "" || req.body.password == ""){
+    return res.status(400).send("Bad Request"); 
+  }
+
   if (req.body.userId === req.params.id) {
     if (req.body.password) {
       const salt = await bcrypt.genSalt(10);

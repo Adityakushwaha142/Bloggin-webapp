@@ -9,7 +9,7 @@ export default function Header() {
       
       <img
         className="headerImg"
-        src="http://localhost:5000/images/1654606279938Trend.jpg"
+        src="https://fashion-blogging-aditya.herokuapp.com/images/1654606279938Trend.jpg"
         alt=""
       />
     </div>
